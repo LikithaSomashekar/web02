@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soprts Event Registration Form</title>
+    <link rel="stylesheet" href="stylep.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="form-container">
+    
+
+        <h1>Sports Event Registration Form</h1>
+        <form id="libraryForm" method="POST" action="processp.php">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="gametype">Game Type:</label>
+            <select id="gametype" name="gametype" required>
+                <option value="">--Select--</option>
+                <option value="football">Football</option>
+                <option value="soccer">Soccer</option>
+                <option value="basketball">Basketball</option>
+            </select>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script src="scriptp.js"></script>
+
+
+</body>
+</html>
